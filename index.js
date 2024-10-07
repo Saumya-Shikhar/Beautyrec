@@ -11,7 +11,7 @@ const port = process.env.PORT || 2100;
 const shop_name = process.env.STORE_NAME;
 const token = process.env.API_KEY;
 
-app.post('/product', async (req, res) => {
+app.get('/product', async (req, res) => {
     let config = {
       method: 'get',
       maxBodyLength: Infinity,
